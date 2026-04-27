@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RhythmDash</title>
+  <meta
+    name="description"
+    content="Download RhythmDash and watch the gameplay video directly from this page."
+  >
+  <meta name="theme-color" content="#080d16">
+  <link rel="icon" type="image/png" href="assets/game-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="landing">
+    <section class="hero">
+      <div class="brand">
+        <img class="game-title-image" src="assets/game-title.png" alt="RhythmDash title art">
+      </div>
+
+      <div class="download-actions" aria-label="Game downloads">
+        <a class="download-button" data-download="windows" href="https://github.com/Pistachio-Studio-Dev/RhythmDash/releases/download/V1.0.0/RhythmDash-Windows.zip" download>
+          <span class="download-platform">Windows</span>
+          <strong>Download</strong>
+          <span class="download-meta" data-meta="windows">263.3 MB</span>
+        </a>
+        <a class="download-button" data-download="macos" href="https://github.com/Pistachio-Studio-Dev/RhythmDash/releases/download/V1.0.0/RhythmDash-macOS.zip" download>
+          <span class="download-platform">macOS</span>
+          <strong>Download</strong>
+          <span class="download-meta" data-meta="macos">285.6 MB</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <video
+        id="gameplay-video"
+        controls
+        preload="metadata"
+        playsinline
+        poster="assets/gameplay-screenshot.png"
+      >
+        <source src="assets/gameplay-web.mp4" type="video/mp4">
+        Your browser does not support embedded video playback.
+      </video>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
